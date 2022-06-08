@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #BCEFE9;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarysoftware.InsertionController">
+   <children>
+      <TabPane layoutX="13.0" layoutY="16.0" prefHeight="300.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Author">
+              <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0">
+                      <children>
+                          <GridPane layoutX="19.0" layoutY="23.0" minHeight="150.0" minWidth="400.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="20.0">
+                              <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" />
+                                  <ColumnConstraints hgrow="SOMETIMES" />
+                              </columnConstraints>
+                              <rowConstraints>
+                                  <RowConstraints vgrow="SOMETIMES" />
+                                  <RowConstraints vgrow="SOMETIMES" />
+                                  <RowConstraints vgrow="SOMETIMES" />
+                              </rowConstraints>
+                              <children>
+                                  <TextField fx:id="authorName" GridPane.columnIndex="1" />
+                                  <TextField fx:id="authorYearBirth" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                  <Label text="Name" />
+                                  <Label text="Year Birth" GridPane.rowIndex="1" />
+                              <Label text="Description" GridPane.rowIndex="2" />
+                              <TextField fx:id="authorDescription" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              </children>
+                          </GridPane>
+                          <Button onAction="#buttonSaveAuthor" layoutX="274.0" layoutY="213.0" mnemonicParsing="false" text="Button" />
+                      </children></AnchorPane>
+              </content>
+          </Tab>
+          <Tab text="Book">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0">
+                <children>
+                    <GridPane layoutX="19.0" layoutY="23.0" minHeight="200.0" minWidth="400.0" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="20.0">
+                        <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" />
+                            <ColumnConstraints hgrow="SOMETIMES" />
+                        </columnConstraints>
+                        <rowConstraints>
+                            <RowConstraints vgrow="SOMETIMES" />
+                            <RowConstraints vgrow="SOMETIMES" />
+                            <RowConstraints vgrow="SOMETIMES" />
+                            <RowConstraints vgrow="SOMETIMES" />
+                            <RowConstraints vgrow="SOMETIMES" />
+                            <RowConstraints vgrow="SOMETIMES" />
+                            <RowConstraints vgrow="SOMETIMES" />
+                        </rowConstraints>
+                        <children>
+                            <TextField fx:id="bookISBN" GridPane.columnIndex="1" />
+                            <TextField fx:id="bookName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                            <Label text="ISBN" />
+                            <Label text="Name" GridPane.rowIndex="1" />
+                              <TextField fx:id="bookReleaseYear" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField fx:id="bookEdition" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <TextField fx:id="bookQuantity" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <TextField fx:id="bookAuthorCode" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <TextField fx:id="bookPublishingCode" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                              <Label text="Release Year" GridPane.rowIndex="2" />
+                              <Label text="Edition" GridPane.rowIndex="3" />
+                              <Label text="Quantity" GridPane.rowIndex="4" />
+                              <Label text="Author ID" GridPane.rowIndex="5" />
+                              <Label text="PublishingCompany ID" GridPane.rowIndex="6" />
+                        </children>
+                    </GridPane>
+                    <Button onAction="#buttonSaveBook" layoutX="274.0" layoutY="245.0" mnemonicParsing="false" text="Button" />
+                </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Publishing Company">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0">
+                     <children>
+                        <GridPane layoutX="19.0" layoutY="23.0" minHeight="100.0" minWidth="400.0" AnchorPane.bottomAnchor="148.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="20.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" />
+                            <ColumnConstraints hgrow="SOMETIMES" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints vgrow="SOMETIMES" />
+                            <RowConstraints vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <TextField fx:id="publishingName" GridPane.columnIndex="1" />
+                              <TextField fx:id="publishingInitials" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label text="Name" />
+                              <Label text="Initials" GridPane.rowIndex="1" />
+                           </children>
+                        </GridPane>
+                        <Button onAction="#buttonSavePubCompany" layoutX="274.0" layoutY="225.0" mnemonicParsing="false" text="Button" />
+                     </children></AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="Theme">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0">
+                        <children>
+                            <GridPane layoutX="19.0" layoutY="23.0" minHeight="100.0" minWidth="400.0" AnchorPane.bottomAnchor="148.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="20.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                <children>
+                                    <TextField fx:id="themeName" GridPane.columnIndex="1" />
+                                    <TextField fx:id="themeDescription" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label text="Name" />
+                                    <Label text="Description" GridPane.rowIndex="1" />
+                                </children>
+                            </GridPane>
+                            <Button onAction="#buttonSaveTheme" layoutX="274.0" layoutY="217.0" mnemonicParsing="false" text="Button" />
+                        </children></AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="ThemeBooks">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0">
+                        <children>
+                            <GridPane layoutX="19.0" layoutY="23.0" minHeight="75.0" minWidth="400.0" AnchorPane.bottomAnchor="176.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="20.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                <children>
+                                    <TextField fx:id="themeBooksID" GridPane.columnIndex="1" />
+                                    <TextField fx:id="themeBooksISBN" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label text="Theme ID" />
+                                    <Label text="Book ISBN" GridPane.rowIndex="1" />
+                                </children>
+                            </GridPane>
+                            <Button onAction="#buttonSaveThemeBooks" layoutX="274.0" layoutY="221.0" mnemonicParsing="false" text="Button" />
+                        </children></AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="User">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0">
+                        <children>
+                            <GridPane layoutX="19.0" layoutY="23.0" minHeight="150.0" minWidth="400.0" AnchorPane.bottomAnchor="98.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="20.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.0" minWidth="10.0" prefWidth="138.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="262.0" minWidth="10.0" prefWidth="262.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                <children>
+                                    <TextField fx:id="userCPF" GridPane.columnIndex="1" />
+                                    <TextField fx:id="userName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label text="CPF" />
+                                    <Label text="Name" GridPane.rowIndex="1" />
+                              <Label text="Email" GridPane.rowIndex="2" />
+                              <Label text="Address" GridPane.rowIndex="3" />
+                              <TextField fx:id="userEmail" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField fx:id="userAddress" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                </children>
+                            </GridPane>
+                            <Button onAction="#buttonSaveUser" layoutX="274.0" layoutY="221.0" mnemonicParsing="false" text="Button" />
+                        </children></AnchorPane>
+                </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="350.0" prefWidth="499.0" style="-fx-background-color: #BCEFE9;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarysoftware.SelectionController">
+   <children>
+      <Button fx:id="btnGetScene" onAction="#goToInsert" layoutX="89.0" layoutY="248.0" mnemonicParsing="false" text="Button" />
+      <Button onAction="#goToRent" layoutX="341.0" layoutY="248.0" mnemonicParsing="false" text="Button" />
+      <Label layoutX="59.0" layoutY="200.0" text="Go to Insertion page!" />
+      <Label layoutX="322.0" layoutY="200.0" text="Go to Rent page!" />
+   </children>
+</AnchorPane>
